@@ -1,0 +1,11 @@
+structure belong to this link need to read it carefully
+https://blog.webdevsimplified.com/2022-07/react-folder-structure/
+
+## install
+## react-create-app
+npm install react-scripts axios
+npm install react-bootstrap bootstrap react-doom reactstrap react-router-dom
+npm install eslint-plugin-react-hooks --save-dev web-vitals
+npm install webpack webpack-dev-server react-hot-loader
+
+Index.js is main run use to render App.js to run (component App)

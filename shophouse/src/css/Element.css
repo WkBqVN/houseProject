@@ -1,0 +1,30 @@
+ul,
+ol {
+    list-style: none;
+    /* remove the default list style */
+    padding: 0;
+    /* remove any default padding */
+    padding-left: 0rem !important;
+}
+
+li {
+    width: 100%;
+    /* make the list item full-width */
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+
+.col {
+    padding: 0px !important;
+}
+
+.container,
+.container-fluid {
+    padding-right: 0px !important;
+}

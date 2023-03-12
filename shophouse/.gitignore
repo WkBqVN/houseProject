@@ -1,0 +1,5 @@
+### node modules to big to push just run makefile again ###
+./node_modules
+
+### package lock not push too
+*.log

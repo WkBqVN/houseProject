@@ -1,0 +1,125 @@
+/*Navbar*/
+#top-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    padding: 0px !important;
+    height: 45px;
+    z-index: 100;
+}
+
+/* dashboard */
+.dashboard-main {
+    top: -45px;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+/* House */
+
+.house-info {
+    display: fixed;
+    overflow-y: scroll;
+    height: 100vh;
+    background-color: chocolate;
+}
+
+/* House card */
+.noted-house-card-class {
+    display: inline-block;
+    margin-bottom: 6% !important;
+    width: 100%;
+    height: 20%;
+    max-height: 20vh;
+    background-color: blue;
+}
+
+.break-word-content {
+    word-wrap: break-word;
+    height: 50%;
+}
+
+.fixed-card-title {
+    max-width: 100%;
+    word-wrap: break-word;
+    height: 30%;
+}
+
+.btn-card-row {
+    display: inline-block;
+    width: 100%;
+    height: 20%;
+}
+
+.btn-card-actions {
+    width: 25%;
+    height: 30px;
+}
+
+.card-body {
+    padding: 0px !important;
+}
+
+/* House Live */
+.house-live-chat {
+    display: fixed;
+    overflow-y: scroll;
+    height: 50vh;
+    background-color: aqua;
+    display: fixed;
+}
+
+/* House Noted */
+.house-noted {
+    display: fixed;
+    overflow-y: scroll;
+    height: 50vh;
+    display: fixed;
+    background-color: blueviolet;
+}
+
+/* House Plugins */
+.house-plugins {
+    display: fixed;
+    height: 100vh;
+    background-color: brown;
+}
+
+/*noted house list*/
+#noted-house-card-list {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: "fixed";
+    height: calc(100vh - 80px);
+    left: 0;
+    z-index: 90;
+    offset-distance: inherit;
+    text-align: center;
+}
+
+/* Friend List */
+.friend-list {
+    position: fixed;
+    right: 0;
+    background-color: lime;
+    justify-content: left;
+    height: 100vh;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+/* Footer */
+.footer-bar {
+    height: 35px;
+    display: inrine-block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    width: 100%;
+}
