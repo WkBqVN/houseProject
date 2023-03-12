@@ -1,7 +1,5 @@
 ### node modules to big to push just run makefile again ###
-/src/node_modules
-/src/package-lock.json
-/src/package.json
+/node_modules
 ### package lock not push too
 *.log
 
