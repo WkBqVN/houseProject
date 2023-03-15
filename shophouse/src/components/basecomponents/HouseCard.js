@@ -14,7 +14,7 @@ export default function HouseCard(houseDataObj) {
                     <Card.Img variant="top" src={testImg} />
                     <Card.Body>
                         <Card.Title className="fixed-card-title">{houseDataObj.houseName}</Card.Title>
-                        <Card.Text className="break-word-content">{houseDataObj.housePrice}</Card.Text>
+                        <Card.Text className="house-content">{houseDataObj.housePrice}</Card.Text>
                         {generateBtns()}
                     </Card.Body>
                 </Card>
@@ -26,12 +26,12 @@ export default function HouseCard(houseDataObj) {
 let generateBtns = () => {
     return (
         <div>
-            <Row className="btn-card-row">
-                <Button className="btn-card-actions" variant="primary">+</Button>
-                <Button className="btn-card-actions" variant="primary">+</Button>
-                <Button className="btn-card-actions" variant="primary">+</Button>
-                <Button className="btn-card-actions" variant="primary">-</Button>
+            <Row className="btn-card-row" style={{marginRight:"-2px",marginLeft:"2px"}}>
+                <Button className="btns-card-action" variant="primary">+</Button>
+                <Button className="btns-card-action" variant="primary">+</Button>
+                <Button className="btns-card-action" variant="primary">+</Button>
+                <Button className="btns-card-action" variant="primary">-</Button>
             </Row>
-        </div >
+        </div>
     )
 }
