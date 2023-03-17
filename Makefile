@@ -1,12 +1,12 @@
 BASE_SOURCE_URL_FRONTEND = shophousefrontend
 BASE_SOURCE_URL_BACKEND = shophousebackend
 
-.PHONY: house-frontend-install
-house-server-install:
+.PHONY: house-install
+house-install:
 	cd $(BASE_SOURCE_URL_FRONTEND); npm install react-scripts axios; \
 	npm install react-bootstrap bootstrap react-doom reactstrap react-router-dom; \
 	npm install eslint-plugin-react-hooks --save-dev web-vitals;\
-
+	npm install nodemon express -g;
 
 .PHONY: house-frontend-up
 house-server-up:
@@ -17,7 +17,7 @@ house-backend-install:
 
 .PHONY: house-backend-up
 house-backend-up:
-	cd $(BASE_SOURCE_URL_BACKEND); node app.js
+	cd $(BASE_SOURCE_URL_BACKEND); npx nodemon app.js -y
 
 # .PHONY: server-down
 # server-down:

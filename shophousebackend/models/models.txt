@@ -1,1 +1,2 @@
-somethign
+Models – every model is an object matching the fields in the table by name and type. They do not make any changes to the data but simply represent it in your codebase. 
+Depending on the ORM you are using, models will be different but you can store them as separate js files – user.js, group.js, etc.

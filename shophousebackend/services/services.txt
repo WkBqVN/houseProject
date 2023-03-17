@@ -1,1 +1,10 @@
-something
+Services the business logic in your application is stored here. 
+These are mostly files exporting classes or a giant function depending on your Node.js project requirements.
+Essentially, theycontain the more complex functionalities in your codebase
+.In almost all cases, services and models will relate to one another.
+For example in services you will use the database tables representation coming from the models as data.
+This data is the same you implement features in the application with.
+The service methods are called in the controllers mentioned earlier.
+It’s a good practice to create a base or a subfolder that will represent the common logic of different services Also,
+when you have a group of services sharing the same business logic (for example, coming from a third party API), it would be more useful to place them in a subfolder. 
+The two most common naming conventions when it comes to services here are camel case or placing a “.service” at the end of the file name (e.g. statistics.service.js or statisticsService.js and so on).

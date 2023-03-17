@@ -1,14 +1,13 @@
 //Entry house backend server
-// => Nodejs receive port: 6000 < br >
-// => Nodejs send port: 6060 < br >
+// => Nodejs receive port: 6000 
+// => Nodejs send port: 6060 
+const express = require('express')
 
-var http = require("http")
-var result = require("./utils/test")
+const app = express()
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'application/json'
-    })
-    res.write(result.myres)
-    res.end()
-}).listen(6060)
+let thin = require('./routes/AppRouters')
+let welcome = require
+
+app.use("/hello", thin)
+
+app.listen(6060)

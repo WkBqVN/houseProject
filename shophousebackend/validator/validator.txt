@@ -1,1 +1,2 @@
-// validate input
+Validators – you use validators mainly to approve payloads and configuration, which is essential for the API’s.
+When receiving data from the client, you want to make sure it is valid so your services can work with it.

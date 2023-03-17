@@ -1,0 +1,4 @@
+Routes – everything related to routing belongs here. Routes are the most essential part of an API, so having them well structured will impact the software development life cycle. 
+Remember the “every file has it’s index” earlier? Here we can make the most out of it by defining more abstraction to your routes, specified in separate project components. 
+That makes it easier and cleaner for everyone to understand which routes relate to which entities.
+ A good naming convention is the name of the entity associated to that specific route followed by routes (contact-routes.js, group-routes.js)

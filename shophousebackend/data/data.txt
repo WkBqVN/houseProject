@@ -1,0 +1,2 @@
+Data/Enum – this is a component designed for implementing constants and enumerables. 
+Instead of using strings for data coming from a third party API, e.g. statuses, you can create constants in the data/ folder which you can reuse easily.

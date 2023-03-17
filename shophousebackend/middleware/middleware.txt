@@ -1,0 +1,3 @@
+Middleware – the name speaks clearly – you can have a separate project component for the middlewares that you use in the routes. 
+A good practice is to have subfolders defining the purposes of the middlewares. 
+For instance, you can have auth/ subfolder for all authentication middlewares, store/ subfolder for all the middlewares regarding the store entity, and so on.

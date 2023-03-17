@@ -1,1 +1,2 @@
-// raise view for server which show all log of user
+Tests – after you have created the key components in your folder structure, it’s time to implement testing in your project (both unit and integration).
+Testing is really important when it comes to developing your applications, and I guarantee that the time and effort you put into it are worth it.
