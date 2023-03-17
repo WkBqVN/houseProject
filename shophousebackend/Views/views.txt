@@ -1,0 +1,1 @@
+// raise view for server which show all log of user
