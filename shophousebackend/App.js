@@ -5,9 +5,10 @@ const express = require('express')
 
 const app = express()
 
-let thin = require('./routes/AppRouters')
-let welcome = require
+let appRoute = require('./routes/app-route')
+let houseRoute = require('./routes/house-route')
 
-app.use("/hello", thin)
+app.use("/", appRoute)
+app.use("/house",houseRoute)
 
 app.listen(6060)
