@@ -1,6 +1,7 @@
 ### node modules to big to push just run makefile again ###
 shophousefrontend/node_modules
 shophousebackend/node_modules
+/node_modules
 ### package lock not push too
 *.log
 

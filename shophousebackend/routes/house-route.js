@@ -1,9 +1,9 @@
 // house routes
-let houseM = require('../middleware/house/house-m')
+let m_house = require('../middleware/house/m-house')
 const express = require("express")
 const router = express.Router()
 
-router.get('/listHouse', houseM.getListHouses);
-router.get('/:id',houseM.getHouseById)
+router.get('/houses', m_house.getListHouses);
+router.get('/:id',m_house.getHouseById)
 
 module.exports = router

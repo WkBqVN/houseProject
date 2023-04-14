@@ -4,7 +4,7 @@ import './css/Component.css';
 import './css/Element.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React from 'react';
+import { React, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <NavbarMain name="navbar-main" />
-      <Row> 
+      <Row>
         <Col sm={10}>
           <Row className="row-element h-100 w-100" style={{ marginTop: "45px" }}>
             <Col>
@@ -39,7 +39,7 @@ function App() {
             </Col>
           </Row >
         </Col>
-        <Col sm={2} className="h-100" style={{ marginTop: "45px"}}>
+        <Col sm={2} className="h-100" style={{ marginTop: "45px" }}>
           <FriendList />
         </Col>
       </Row>

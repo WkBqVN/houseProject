@@ -34,7 +34,7 @@ house-frontend-install-window:
 	cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-scripts axios\
     cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-bootstrap bootstrap react-dom reactstrap react-router-dom\
     cd $(BASE_SOURCE_URL_FRONTEND) && npm install eslint-plugin-react-hooks --save-dev web-vitals\
-    npm install nodemon express -g
+    npm install axios nodemon express -g
 	
 .PHONY: house-frontend-up-window
 house-frontend-up-window:
