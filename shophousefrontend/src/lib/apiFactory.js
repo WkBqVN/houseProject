@@ -1,14 +1,9 @@
-// generate data for api input request
-
-const apiFactory = {
-    createRequestData: (apiType) => setRequestApiData,
-    createResponseData: (apiType) => setResponseApiData,
-    createApiData: (apiType) => setApiData
+let fetchSomething = () => {
+    return fetch("http://localhost:6060/house/houses")
+        .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    }).then(data => { return data })
 }
 
-function createApiData(input, output) {
-    
-}
-
-
-export default apiFactory 
+export default fetchSomething

@@ -6,8 +6,8 @@ import testImg from '../../data/dummydata/house1.jpeg'
 import Container from 'react-bootstrap/Container';
 import houseData from '../../data/dummydata/dummydata.json'
 import HouseCard from '../basecomponents/HouseCard'
-import restApi from '../../lib/lib_rest_api'
-import apiFactory from '../../lib/lib_rest_api'
+import fetchSomething from '../../lib/apiFactory'
+
 
 const MAX_DISPLAY_NOTED_HOUSE = 5
 const MAX_STORED_NOTED_HOUSE = 20
@@ -39,8 +39,12 @@ function generateList(data) {
 }
 
 function getDataFromAPI() {
-    q = apiFactory.SendRequest()
-    return q
+    // this can't fetch from localhost
+    return fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        }).then(data => { return data })
 }
 
 export default NotedListHouse
