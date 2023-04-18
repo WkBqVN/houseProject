@@ -1,6 +1,7 @@
 # PracticeProject
 1. Shop Front End Use React js with dummy data
 2. Code node js server with dummy data
+3. Nodejs mixed with typescript for better control code
 
 # PracticeProject
 ## FrontEnd shop server(nodejs & reactjs)
