@@ -39,7 +39,7 @@ function generateList(data) {
 }
 
 function getDataFromAPI() {
-    q = apiFactory.SendRequest
+    q = apiFactory.SendRequest()
     return q
 }
 
