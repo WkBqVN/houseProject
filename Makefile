@@ -23,6 +23,7 @@ house-frontend-up:
 
 .PHONY: house-backend-install
 house-backend-install:
+	cd $(BASE_SOURCE_URL_BACKEND); npm install cors
 
 .PHONY: house-backend-up
 house-backend-up:
@@ -33,7 +34,7 @@ house-backend-up:
 house-frontend-install-window:
 	cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-scripts axios\
     cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-bootstrap bootstrap react-dom reactstrap react-router-dom\
-    cd $(BASE_SOURCE_URL_FRONTEND) && npm install eslint-plugin-react-hooks --save-dev web-vitals\
+    cd $(BASE_SOURCE_URL_FRONTEND) && npm install eslint-plugin-react-hooks cors --save-dev web-vitals\
     npm install axios nodemon express -g
 	
 .PHONY: house-frontend-up-window
@@ -42,7 +43,7 @@ house-frontend-up-window:
 
 .PHONY: house-backend-install-window
 house-backend-install-window:
-	cd $(BASE_SOURCE_URL_BACKEND) && npm install express
+	cd $(BASE_SOURCE_URL_BACKEND) && npm install cors
 
 .PHONY: house-backend-up-window
 house-backend-up-window:

@@ -7,6 +7,8 @@ import Container from 'react-bootstrap/Container';
 import houseData from '../../data/dummydata/dummydata.json'
 import HouseCard from '../basecomponents/HouseCard'
 import fetchSomething from '../../lib/apiFactory'
+import SendRequest from '../../lib/apiFactory'
+import apiWorker from '../../lib/apiFactory'
 
 
 const MAX_DISPLAY_NOTED_HOUSE = 5
@@ -23,7 +25,6 @@ function NotedListHouse() {
 }
 
 function generateList(data) {
-    console.log(data)
     let listHouse = data.houses.map(houseObj => {
         return (
             HouseCard(houseObj)
@@ -39,12 +40,9 @@ function generateList(data) {
 }
 
 function getDataFromAPI() {
-    // this can't fetch from localhost
-    return fetch("https://jsonplaceholder.typicode.com/todos/1")
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-        }).then(data => { return data })
+    apiWorker.SetAPIResource(null, "localhost:6060", "/house/houses", "https", "GET",  "", {})
+    apiWorker.SendRequest()
+    return apiWorker.responseData
 }
 
 export default NotedListHouse
