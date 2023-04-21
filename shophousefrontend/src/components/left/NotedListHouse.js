@@ -9,31 +9,19 @@ let gStartIndex = 0
 function NotedListHouse() {
     // houseIndex is set default by useState(0 -> house index array start from 0)
     // useState is not execute immediately
-    const [houseList, setHouseList] = useState("abc");
-    setHouseList("Hello")
-    console.log(houseList)
-    const [startHouseNotedIndex, setStartHouseNotedIndex] = useState(0);
-    apiWorker.SetAPIResource("localhost:6060", "/house/houses", "GET", {}, "", {})
+    const [houseList, setHouseList] = useState({});
     // with handle response is not work at first its will wait send request to work
     // -> send request is async so mean the code is not set up late
     // but its still resposne is receive right? so why this not work
-    // apiWorker.WithHandleResponse((data) => {
-    //     console.log("Setting houseList state 1:", data)
-    //     console.log("Setting houseList state 2:", data)
-    //     setHouseList(1)
-    // }).SendRequest()
-    // console.log(houseList)
+    apiWorker.SetAPIResource("localhost:6060", "/house/houses", "GET", {}, "", {})
+    apiWorker.WithHandleResponse((data) => {
+        console.log("Setting houseList state:", data)
+        setHouseList(data)
+    })
     useEffect(() => {
-        // this not work at all
-        apiWorker.SetAPIResource("localhost:6060", "/house/houses", "GET", {}, "", {})
-        apiWorker.WithHandleResponse((data) => {
-            console.log("Setting houseList state:", data)
-            setStartHouseNotedIndex(1)
-            setHouseList(data)
-        }).SendRequest()
-    },[houseList])
+        apiWorker.SendRequest()
+    }, [houseList])
     console.log("houseList state:" + houseList)// this is null
-    console.log("Index " + startHouseNotedIndex)
     return generateList(apiWorker.response)
 }
 
