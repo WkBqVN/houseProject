@@ -13,9 +13,12 @@ hello:
 .PHONY: house-frontend-install
 house-frontend-install:
 	cd $(BASE_SOURCE_URL_FRONTEND); npm install react-scripts axios; \
-	npm install react-bootstrap bootstrap react-doom reactstrap react-router-dom; \
+	npm install react-bootstrap bootstrap react-doom reactstrap nodemon react-router-dom; \
 	npm install eslint-plugin-react-hooks --save-dev web-vitals;\
-	npm install nodemon express -g;
+	npm i --save @fortawesome/fontawesome-svg-core;\
+	npm i --save @fortawesome/fontawesome-free-solid;\
+	npm install --save @fortawesome/free-solid-svg-icons;\
+	npm install --save @fortawesome/react-fontawesome;
 
 .PHONY: house-frontend-up
 house-frontend-up:
@@ -35,7 +38,11 @@ house-frontend-install-window:
 	cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-scripts axios\
     cd $(BASE_SOURCE_URL_FRONTEND) && npm install react-bootstrap bootstrap react-dom reactstrap react-router-dom\
     cd $(BASE_SOURCE_URL_FRONTEND) && npm install eslint-plugin-react-hooks cors --save-dev web-vitals\
-    npm install axios nodemon express -g
+	cd $(BASE_SOURCE_URL_FRONTEND) && npm i --save @fortawesome/fontawesome-svg-core\
+	cd $(BASE_SOURCE_URL_FRONTEND) && npm install --save @fortawesome/free-solid-svg-icons\
+	cd $(BASE_SOURCE_URL_FRONTEND) && npm i --save @fortawesome/fontawesome-free-solid\
+	cd $(BASE_SOURCE_URL_FRONTEND) && npm install --save @fortawesome/react-fontawesome\
+    cd $(BASE_SOURCE_URL_FRONTEND) && npm install axios nodemon express -g
 	
 .PHONY: house-frontend-up-window
 house-frontend-up-window:

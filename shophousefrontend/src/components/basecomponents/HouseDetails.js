@@ -15,7 +15,7 @@ function HouseDetails() {
                 asdfdasfadsasdfdasfadsasdfdasfads
                 asdfdasfadsasdfdasfadsasdfdasfadsasdfdasfads
                 asdfdasfadsasdfdasfads
-                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxe
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxe
                 asdfdasfadsasdfdasfadsasdfdasfadsasdfdasfads
                 asdfdasfadsasdfdasfadsasdfdasfadsasdfdasfads
                 asdfdasfadsasdfdasfadsasdfdasfads

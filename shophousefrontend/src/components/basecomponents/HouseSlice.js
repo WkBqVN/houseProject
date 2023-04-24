@@ -3,10 +3,10 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 
-function HouseSlice() {
+function HouseSlide() {
     return (
         <div style={{ height: "250px" }}>
-            <Carousel className = "house-slide">
+            <Carousel className="house-slide">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -49,4 +49,4 @@ function HouseSlice() {
     )
 }
 
-export default HouseSlice
+export default HouseSlide

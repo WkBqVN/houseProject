@@ -63,7 +63,7 @@ function NavbarMain() {
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success">Search</Button>
+                        <Button variant="outline-success">Login</Button>
                     </Form>
                 </Col>
             </Row>

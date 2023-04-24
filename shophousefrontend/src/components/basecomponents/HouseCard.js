@@ -6,9 +6,15 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import testImg from '../../data/dummydata/house1.jpeg'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUser, faShareNodes, faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faUser, faShareNodes, faPlus, faStar);
+
 export default function HouseCard(houseDataObj) {
     return (
-        <div className="noted-house-card-class">
+        <div className="noted-house-card-class" key={`${houseDataObj.houseId}-house-div`}>
             <li key={houseDataObj.houseId}>
                 <Card style={{ width: "100%" }}>
                     <Card.Img variant="top" src={testImg} />
@@ -26,11 +32,19 @@ export default function HouseCard(houseDataObj) {
 let generateBtns = () => {
     return (
         <div>
-            <Row className="btn-card-row" style={{marginRight:"-2px",marginLeft:"2px"}}>
-                <Button className="btns-card-action" variant="primary">+</Button>
-                <Button className="btns-card-action" variant="primary">+</Button>
-                <Button className="btns-card-action" variant="primary">+</Button>
-                <Button className="btns-card-action" variant="primary">-</Button>
+            <Row className="btn-card-row" style={{ marginRight: "-2px", marginLeft: "2px" }}>
+                {/* display more info */}
+                <Button className="btns-card-action" variant="primary">
+                    <FontAwesomeIcon icon="plus" style={{ marginBottom: "30px" }} /></Button>
+                {/* show owner info */}
+                <Button className="btns-card-action" variant="primary">
+                    <FontAwesomeIcon icon="user" style={{ marginBottom: "30px" }} /></Button>
+                {/* share to chat */}
+                <Button className="btns-card-action" variant="primary">
+                    <FontAwesomeIcon icon="share-nodes" style={{ marginBottom: "30px" }} /></Button>
+                {/* ignore(delete out) to list */}
+                <Button className="btns-card-action" variant="primary">
+                    <FontAwesomeIcon icon="star" style={{ marginBottom: "30px" }} /></Button>
             </Row>
         </div>
     )

@@ -1,3 +1,4 @@
 Config – the config folder is used to organize configuration files. The most common usage of the config file is to export environment variables 
 to the other parts of the project or some database configurations. This is a must-have file, and you will most likely need to create it and set it up in the beginning of the project. 
 Without it you won’t have a proper place to connect to databases or set up environments (e.g. test, production, etc…).
+
