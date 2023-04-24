@@ -14,7 +14,7 @@ let apiResource = {
     headers: {
         'Content-Type': 'application/json',
     },
-    MakeURI: function () {
+    MakeURI: function() {
         let desURL = ""
         if (this.desHost.protocol != "") {
             desURL += this.desHost.protocol + "://"
@@ -26,7 +26,7 @@ let apiResource = {
             return
         }
         if (this.desHost.port != "") {
-            desURL += ":" + this.desHost.port 
+            desURL += ":" + this.desHost.port
         }
         if (this.url != "") {
             desURL += this.url
@@ -44,7 +44,8 @@ let apiResource = {
 let apiWorker = {
     request: apiResource,
     response: {},
-    SendRequest: function () {
+    message: "",
+    SendRequest: function() {
         if (validateApi(this.request) && this.request.err == "") {
             axios({
                 url: this.request.MakeURI(),
@@ -57,7 +58,7 @@ let apiWorker = {
         }
         return this
     },
-    WithHandleResponse: function (callbackFunc) {
+    WithHandleResponse: function(callbackFunc) {
         this.HandleResponse = callbackFunc
         return this
     },
@@ -65,10 +66,10 @@ let apiWorker = {
         this.resource.headers.header = header
         return this
     },
-    HandleResponse: function (data) {
+    HandleResponse: function(data) {
         this.response = data
     },
-    SetAPIResource: function (url, method, data, params, headers) {
+    SetAPIResource: function(url, method, data, params, headers) {
         this.request.url = url
         if (method === null || method === undefined || method === "") {
             method = "GET"
@@ -78,14 +79,14 @@ let apiWorker = {
         this.request.params = params
         this.request.headers = headers
     },
-    SetHost: function (protocol, address, port) {
+    SetHost: function(protocol, address, port) {
         this.request.desHost.protocol = protocol
         this.request.desHost.address = address
         this.request.desHost.port = port
     },
     handleData: (data, callbackFunc) => {
         callbackFunc(data)
-    }
+    },
 }
 
 function validateApi(apiResourse) {

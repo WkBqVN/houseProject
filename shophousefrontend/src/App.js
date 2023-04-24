@@ -13,7 +13,8 @@ import NotedListHouse from './components/left/NotedListHouse';
 import FriendList from './components/right/FriendList';
 import DashboardMain from './components/center/DashboardMain';
 import NavbarMain from './components/top/NavbarTop';
-import FooterBar from './components/bottom/FooterBar';
+import FooterBar from './components/bottom/footer_bar';
+import LoginForm from './features/authentication/component/login_form'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <FriendList />
         </Col>
       </Row>
+      <LoginForm />
     </div >
   );
 }

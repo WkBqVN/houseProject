@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import HouseCard from '../basecomponents/HouseCard'
+import HouseCard from '../basecomponents/house_card'
 import apiWorker from '../../lib/apiFactory'
 
 function NotedListHouse() {

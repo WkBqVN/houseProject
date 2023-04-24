@@ -41,7 +41,16 @@ function NavbarMain() {
                                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                                         </NavDropdown>
                                         <NavDropdown title={
-                                            <span className="text-primary my-auto">Games</span>
+                                            <span className="text-primary my-auto">Analyst</span>
+                                        } id="workspace-dropdown" bg="light">
+                                            <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.2">House List</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.3">Finance</NavDropdown.Item>
+                                            <NavDropdown.Divider />
+                                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                        </NavDropdown>
+                                        <NavDropdown title={
+                                            <span className="text-primary my-auto">Data Collector</span>
                                         } id="workspace-dropdown" bg="light">
                                             <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
                                             <NavDropdown.Item href="#action/3.2">House List</NavDropdown.Item>

@@ -34,18 +34,32 @@ let generateBtns = () => {
         <div>
             <Row className="btn-card-row" style={{ marginRight: "-2px", marginLeft: "2px" }}>
                 {/* display more info */}
-                <Button className="btns-card-action" variant="primary">
+                <Button className="btns-card-action" variant="primary" onClick={handleShowInfoClick}>
                     <FontAwesomeIcon icon="plus" style={{ marginBottom: "30px" }} /></Button>
                 {/* show owner info */}
-                <Button className="btns-card-action" variant="primary">
+                <Button className="btns-card-action" variant="primary" onClick={handleOwnerClick}>
                     <FontAwesomeIcon icon="user" style={{ marginBottom: "30px" }} /></Button>
                 {/* share to chat */}
-                <Button className="btns-card-action" variant="primary">
+                <Button className="btns-card-action" variant="primary" onClick={handleShareClick}>
                     <FontAwesomeIcon icon="share-nodes" style={{ marginBottom: "30px" }} /></Button>
                 {/* ignore(delete out) to list */}
-                <Button className="btns-card-action" variant="primary">
+                <Button className="btns-card-action" variant="primary" onClick={handleDeleteClick}>
                     <FontAwesomeIcon icon="star" style={{ marginBottom: "30px" }} /></Button>
             </Row>
         </div>
     )
+}
+
+const handleShowInfoClick = () => {
+    console.log("Show Info Clicked")
+}
+
+const handleOwnerClick = () => {
+    console.log("Show Info Clicked")
+}
+const handleShareClick = () => {
+    console.log("Show Info Clicked")
+}
+const handleDeleteClick = () => {
+    console.log("Show Info Clicked")
 }
